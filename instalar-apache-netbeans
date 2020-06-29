@@ -1,0 +1,84 @@
+
+        **************************************************
+        ** PASOS PARA LA INSTALACIÓN DE APACHE NETBEANS ** 
+        **************************************************
+
+
+ESPERO LES GUSTE MI GUIA DE INSTALACIÓN DE ADOPTOPENJDK Y APACHE NETBEANS - ATTE. Raynux 
+
+Canal de youtube: https://www.youtube.com/channel/UCEXy71VsO_lEuqcHLx3s31g
+
+---------------------------------------------------------------------------------------------
+
+1) Instalar Adoptopenjdk
+
+Link de la guía de instalación: https://adoptopenjdk.net/installation.html
+
+En resumen, digite estos comandos:
+
+$ wget -qO - https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public | sudo apt-key add -
+$ sudo add-apt-repository --yes https://adoptopenjdk.jfrog.io/adoptopenjdk/deb/
+$ sudo apt update
+$ sudo apt-get install adoptopenjdk-11-hotspot
+
+Para verificar si adoptopenjdk se instaló de forma correcta haremos lo siguiente: 
+
+$ java --version 
+
+Debería aparecer algo parecido a esto:
+
+openjdk 11.0.7 2020-04-14
+OpenJDK Runtime Environment (build 11.0.7+10-post-Ubuntu-3ubuntu1)
+OpenJDK 64-Bit Server VM (build 11.0.7+10-post-Ubuntu-3ubuntu1, mixed mode, sharing)
+
+---------------------------------------------------------------------------------------------
+
+2) Instalar font Consolas --> (Opcional)
+
+$ git clone https://github.com/pensnarik/consolas-font.git
+
+---------------------------------------------------------------------------------------------
+
+3) Descargar Apache Netbeans 
+
+Link de descarga: https://downloads.apache.org/netbeans/netbeans/12.0/netbeans-12.0-bin.zip
+
+o también lo puede descargar digitando el siguiente comando:
+
+$ wget https://downloads.apache.org/netbeans/netbeans/12.0/netbeans-12.0-bin.zip
+
+---------------------------------------------------------------------------------------------
+
+4) Instalación de alacarte
+
+$ sudo apt install alacarte
+
+---------------------------------------------------------------------------------------------
+
+5) Utilizar alacarte para crear el acceso directo:
+
+Name: Apache Netbeans 
+Command: /opt/apache-netbeans/bin/netbeans
+Comment: IDE de desarrollo para Java
+
+*LOGO: /opt/apache-netbeans/nb/netbeans.png
+
+---------------------------------------------------------------------------------------------
+
+6) Instalar el tema Darcula --> (Opcional)
+
+Link de descarga: http://plugins.netbeans.org/download/plugin/9293
+
+o también lo puede descargar digitando el siguiente comando:
+
+$ wget http://plugins.netbeans.org/download/plugin/9293
+
+---------------------------------------------------------------------------------------------
+
+7) Configuración de Apache Netbeans
+
+Cambiar de font: Tools > Option > Fonts & Colors 
+
+Autoformateo de codigo:  Tools > Option > Editor > On Save
+
+
